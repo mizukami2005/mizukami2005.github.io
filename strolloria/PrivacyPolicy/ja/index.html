@@ -1,96 +1,300 @@
+
 <!doctype html>
 <html lang="ja">
 
 <head>
-    <meta charset="utf-8">
-    <title>Strolloriaプライバシーポリシー</title>
-    <meta name="description" content="Strolloriaのプライバシーポリシーです。">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
-    <style type="text/css">
-      body {
-        font-size:12px;
-        background-color:#eaeaea;
+  <meta charset="utf-8">
+  <title>Strolloria プライバシーポリシー</title>
+  <meta name="description" content="Strolloriaのプライバシーポリシーです。">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP", sans-serif;
+      color: #17212b;
+      background: #f2f5f7;
+    }
+
+    body {
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.75;
+    }
+
+    main {
+      box-sizing: border-box;
+      width: min(100% - 32px, 760px);
+      margin: 32px auto;
+      padding: clamp(24px, 5vw, 48px);
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 8px 28px rgb(16 35 50 / 8%);
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(1.75rem, 5vw, 2.25rem);
+      line-height: 1.35;
+    }
+
+    h2 {
+      margin: 2.2em 0 0.6em;
+      padding-bottom: 0.3em;
+      border-bottom: 1px solid #dce4e8;
+      font-size: 1.25rem;
+      line-height: 1.5;
+    }
+
+    h3 {
+      margin: 1.5em 0 0.4em;
+      font-size: 1.05rem;
+    }
+
+    p,
+    ul {
+      margin: 0.7em 0;
+    }
+
+    ul {
+      padding-left: 1.5em;
+    }
+
+    li + li {
+      margin-top: 0.45em;
+    }
+
+    a {
+      color: #006b7c;
+      overflow-wrap: anywhere;
+    }
+
+    .summary {
+      margin: 1.5em 0;
+      padding: 16px 18px;
+      background: #edf8fa;
+      border-left: 4px solid #16879a;
+      border-radius: 8px;
+    }
+
+    .meta,
+    footer {
+      color: #52616c;
+      font-size: 0.92rem;
+    }
+
+    footer {
+      margin-top: 3em;
+      padding-top: 1.25em;
+      border-top: 1px solid #dce4e8;
+    }
+
+    @media (max-width: 520px) {
+      main {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+        box-shadow: none;
       }
-      #content {
-        background-color:white;
-        line-height:1.5;
-        max-width: 540px;
-        padding:20px;
-        margin:50px auto 0;
-      }
-    </style>
+    }
+  </style>
 </head>
 
 <body>
-    <div id="content">
-    <h1>プライバシーポリシー</h1>
-    <h2>お客様から取得する情報</h2>
-    <p>本アプリは、お客様から以下の情報を取得します。</p>
-    <ul>
-        <li>
-            OSが生成するID、端末の種類、端末識別子等のお客様が利用するOSや端末に関する情報
-        </li>
-    </ul>
-    <h2>お客様の情報を利用する目的</h2>
-    <p>本アプリは、お客様から取得した情報を、以下の目的のために利用します。</p>
-    <ul>
-        <li>
-            本アプリのサービスの提供、維持、保護及び改善のため
-        </li>
-        <li>
-            本アプリに関する、お客様の本人確認、認証のため
-        </li>
-        <li>
-            お客様の本アプリの利用履歴を管理するため
-        </li>
-        <li>
-            本アプリにおけるお客様の行動履歴を分析し、本アプリのサービスの維持改善に役立てるため
-        </li>
-        <li>
-            市場分析、マーケティングのため
-        </li>
-        <li>
-            お客様からのお問い合わせに対応するため
-        </li>
-        <li>
-            当社の規約や法令に違反する行為に対応するため
-        </li>
-        <li>
-            当社規約の変更等を通知するため
-        </li>
-    </ul>
-    <h2>第三者提供</h2>
+  <main>
+    <header>
+      <h1>プライバシーポリシー</h1>
+      <p class="meta">対象アプリ：Strolloria（iOS／Android）</p>
+      <p><a href="../en/" hreflang="en" lang="en">English version</a></p>
+    </header>
+
+    <p class="summary">
+      Strolloriaは、許可をいただいた場合に限り、HealthKitまたはHealth Connectから当日の歩数合計を読み取ります。
+      歩数、歩行履歴および街の進行データは端末内に保存され、Firebaseを含む外部サービスには送信されません。
+      アプリの品質改善のため、健康情報を含まない利用状況、クラッシュ情報および性能情報をGoogleのFirebaseへ送信します。
+    </p>
+
     <p>
-        本アプリは、お客様から取得する情報のうち、個人データ（個人情報保護法第２条第６項）に該当するものついては、あらかじめお客様の同意を得ずに、第三者（日本国外にある者を含みます。）に提供しません。 但し、次の場合は除きます。
+      本プライバシーポリシーは、水上 貴晶（以下「運営者」といいます。）が提供するアプリ
+      「Strolloria」（以下「本アプリ」といいます。）における情報の取扱いについて説明するものです。
+    </p>
+
+    <h2>1. 本アプリがアクセスまたは保存する情報</h2>
+
+    <h3>歩数情報</h3>
+    <ul>
+      <li>iOSではApple HealthKit、AndroidではHealth Connectから取得する当日の歩数合計</li>
+      <li>歩数を本アプリ内の街の成長や歩行履歴に反映するために生成される日別歩数記録</li>
+    </ul>
+    <p>
+      本アプリが歩数にアクセスするのは、利用者がOSの権限画面で読み取りを許可した場合のみです。
+      初回連携時に読み取るのは、その日の午前0時から現在時刻までの歩数合計だけであり、連携前の過去日の歩数は取得しません。
+      以後は、本アプリの起動時、連携完了時およびフォアグラウンド復帰時などに当日の歩数合計を読み取ります。
+      本アプリはHealthKitまたはHealth Connectへ健康データを書き込みません。
+    </p>
+
+    <h3>本アプリ内で生成・保存される情報</h3>
+    <ul>
+      <li>選択した街、街の成長段階、旅の進行、完成記録および周回記録</li>
+      <li>日別の歩数履歴および街の成長履歴</li>
+      <li>オンボーディングの完了状態、言語設定その他のアプリ設定</li>
+    </ul>
+
+    <h3>端末の設定情報</h3>
+    <p>
+      本アプリは、表示言語、日付および時刻を、言語表示、日付ごとの歩数管理ならびに街の明るさや天候の自動表現に利用します。
+      正確な位置情報、氏名、住所、電話番号または連絡先は取得しません。
+    </p>
+
+    <h3>Firebaseを通じて取得・外部送信する情報</h3>
+    <p>
+      本アプリは、品質の把握および改善のため、Google LLCが提供するGoogle Analytics for Firebase、Firebase Crashlyticsおよび
+      Firebase Performance Monitoringを利用します。これらのサービスにより、次の情報が自動的に取得され、Googleへ送信されることがあります。
     </p>
     <ul>
-        <li>
-            個人データの取扱いを外部に委託する場合
-        </li>
-        <li>
-            本アプリが買収された場合
-        </li>
-        <li>
-            事業パートナーと共同利用する場合（具体的な共同利用がある場合は、その内容を別途公表します。）
-        </li>
-        <li>
-            その他、法律によって合法的に第三者提供が許されている場合
-        </li>
+      <li>
+        <strong>利用状況：</strong>アプリの起動、画面表示、セッション、機能の利用状況、アプリのバージョン、OS、端末の機種、言語、タイムゾーン、
+        IPアドレスから推定される国または地域、およびアプリのインストールごとに生成される仮名のアプリインスタンスID
+      </li>
+      <li>
+        <strong>クラッシュ・不具合情報：</strong>クラッシュまたは例外の発生日時、スタックトレース、例外メッセージ、アプリの状態、ログ、アプリのバージョン、
+        OS、端末の機種・性能・空き容量等の状態、Firebase Installation ID、Crashlytics Installation UUIDおよびセッションID
+      </li>
+      <li>
+        <strong>性能情報：</strong>起動時間、画面描画時間、処理時間、CPU・メモリ使用状況、ネットワークの種類、通信先URL（クエリパラメータおよび通信内容を除きます。）、
+        応答時間、応答コード、送受信データ量、アプリのバージョン、OS、端末の機種、IPアドレスから推定される国または地域、
+        Firebase Installation IDおよびセッションID
+      </li>
     </ul>
-    <h2>プライバシーポリシーの変更</h2>
     <p>
-        必要に応じて、このプライバシーポリシーの内容を変更します。この場合、変更後のプライバシーポリシーの施行時期と内容を適切な方法により周知または通知します。
+      本アプリは、歩数、HealthKitまたはHealth Connectから取得した情報、日別の歩行履歴、街の進行・完成・周回記録を、
+      Firebaseのイベント、ユーザープロパティ、クラッシュログ、カスタムキー、性能トレースその他の送信項目に含めません。
+      また、広告識別子（AppleのIDFAおよびAndroidの広告ID）を取得せず、Firebaseの情報を広告配信、広告のパーソナライズまたはアプリをまたぐ追跡に利用しません。
     </p>
-    <h2>お問い合わせ</h2>
+
+    <h3>お問い合わせ時に提供される情報</h3>
     <p>
-        お問い合わせは、以下のメールアドレスにご連絡ください。
-        <br>
-        e-mail: mizukami2005@gmail.com
+      利用者がメールでお問い合わせを行った場合、メールアドレス、メール本文および利用者が任意に提供した情報を受け取ります。
     </p>
-    <h2>運営者の名称</h2>
-    <p>水上　貴晶</p>
-    <p>2026年08月09日 制定</p>
-    </div>
+
+    <h2>2. 情報の利用目的</h2>
+    <p>本アプリおよび運営者は、前項の情報を次の目的に限って利用します。</p>
+    <ul>
+      <li>歩数に応じて街を成長させ、本アプリの主要機能を提供するため</li>
+      <li>日別の歩数、街の成長、完成および周回の記録を端末上で表示・維持するため</li>
+      <li>利用者が選択した言語および設定を反映するため</li>
+      <li>データの重複計上を防ぎ、歩数同期と街の進行を正しく保つため</li>
+      <li>利用状況を統計的に把握し、画面構成、機能および操作性を改善するため</li>
+      <li>クラッシュおよび不具合を検知・分析し、原因の調査と修正を行うため</li>
+      <li>起動時間、画面描画および通信等の性能を測定し、安定性と応答性を改善するため</li>
+      <li>お問い合わせへの回答および不具合の調査のため</li>
+      <li>法令上必要な対応を行うため</li>
+    </ul>
+    <p>
+      歩数情報を、広告、マーケティング、利用者の追跡、信用評価、保険料の算定または第三者によるデータ分析には利用しません。
+    </p>
+
+    <h2>3. 保存場所、外部送信および保存期間</h2>
+    <ul>
+      <li>歩数履歴、街の進行記録およびアプリ設定は、本アプリ専用の端末内ストレージに保存します。</li>
+      <li>歩数、歩行履歴および街の進行記録を、運営者が管理するサーバーまたはFirebaseへ送信・保存することはありません。</li>
+      <li>端末内の情報は、本アプリを削除するまで保存されます。</li>
+      <li>端末のOSバックアップ設定によっては、端末内データがAppleまたはGoogleのバックアップ対象となる場合があります。バックアップの管理および削除は、各OSの設定から行ってください。</li>
+      <li>
+        Google Analyticsのユーザー単位およびイベント単位のデータは、取得から14か月で自動削除されるよう設定します。
+        この保存期間の設定は、標準の集計レポートには適用されない場合があります。
+      </li>
+      <li>Firebase Crashlyticsのクラッシュ情報および関連する識別子は、Googleが90日間保持した後、稼働中およびバックアップのシステムから削除する処理を開始します。</li>
+      <li>
+        Firebase Performance Monitoringは、IPアドレスに関連付けられた性能イベントを30日間、Firebase Installation IDに関連付けられた情報および
+        匿名化された性能情報を60日間保持した後、稼働中およびバックアップのシステムから削除する処理を開始します。
+      </li>
+      <li>お問い合わせに含まれる情報は、対応、記録および法令遵守に必要な期間保存した後、不要になった時点で削除します。</li>
+    </ul>
+
+    <h2>4. 第三者提供および外部サービス</h2>
+    <p>
+      運営者は、本アプリが端末内に保存する歩数情報や進行記録を取得せず、第三者へ提供または販売しません。
+      Firebaseに送信される情報は、運営者の委託先としてGoogleが処理します。
+      このほか、法令に基づく開示要請への対応、人の生命・身体・財産の保護、または業務委託に必要な場合には、適用法令に従って情報を取り扱うことがあります。
+    </p>
+    <p>本アプリおよび本ポリシーに関連して、次の外部サービスが利用されます。</p>
+    <ul>
+      <li>
+        Apple HealthKit／Google Health Connect：利用者の許可に基づく歩数の読み取りに利用します。健康データ自体は各サービスと端末の管理下にあります。
+      </li>
+      <li>
+        Google Analytics for Firebase（提供者：Google LLC）：アプリの利用状況を統計的に分析し、機能および操作性を改善するために利用します。
+      </li>
+      <li>
+        Firebase Crashlytics（提供者：Google LLC）：クラッシュおよび不具合を検知・分析し、安定性を改善するために利用します。
+      </li>
+      <li>
+        Firebase Performance Monitoring（提供者：Google LLC）：起動、描画、処理および通信の性能を測定・分析し、応答性を改善するために利用します。
+        Firebaseによる情報の取扱いについては、
+        <a href="https://firebase.google.com/support/privacy" rel="external noreferrer">Firebaseのプライバシーとセキュリティ</a>および
+        <a href="https://policies.google.com/privacy?hl=ja" rel="external noreferrer">Googleプライバシーポリシー</a>
+        をご確認ください。
+      </li>
+      <li>
+        GitHub Pages：本ポリシーの公開に利用します。閲覧時のIPアドレス、ブラウザ情報、アクセス日時等をGitHubが処理する場合があります。詳細は
+        <a href="https://docs.github.com/ja/site-policy/privacy-policies/github-general-privacy-statement" rel="external noreferrer">GitHubのプライバシーステートメント</a>
+        をご確認ください。
+      </li>
+      <li>
+        メールサービス：お問い合わせメールの送受信に利用します。メールの取扱いには、利用者および運営者が利用するメールサービス提供者の方針が適用されます。
+      </li>
+    </ul>
+    <p>
+      Firebaseへ送信される情報は、Google LLCおよびその委託先が、日本国外を含むGoogleまたはその代理人の施設が所在する国・地域で処理または保存する場合があります。
+      Googleは、Firebaseのデータ処理・セキュリティ条件および適用されるデータ保護法に基づいてこれらの情報を取り扱います。
+    </p>
+
+    <h2>5. 安全管理</h2>
+    <p>
+      本アプリは、歩数履歴や進行記録をOSが提供するアプリ専用領域に保存し、他のアプリから直接アクセスできないようにします。
+      また、取得する健康データを歩数合計に限定し、読み取り専用の権限のみを要求することで、取扱う情報を必要最小限にします。
+      Firebaseへ送信する情報から歩数その他の健康情報を分離し、運営者によるFirebase管理画面へのアクセスを必要な範囲に制限します。
+      Firebaseとの通信にはHTTPSが使用され、対象のFirebaseサービスでは保存時の暗号化が行われます。
+    </p>
+
+    <h2>6. 利用者による管理と削除</h2>
+    <ul>
+      <li>歩数へのアクセス許可は、iOSの「ヘルスケア」または設定、AndroidのHealth Connectの設定から、いつでも確認・取消しできます。</li>
+      <li>許可を取り消すと、本アプリは以後の歩数を読み取れなくなります。取消し前に端末内へ保存された履歴や街の進行は、自動では削除されません。</li>
+      <li>本アプリ内に保存された情報は、本アプリを端末から削除することで削除できます。OSバックアップ内のデータは、各OSまたはクラウドサービスの設定から別途削除してください。</li>
+      <li>HealthKitまたはHealth Connectに保存されている元の歩数データは、本アプリを削除しても削除されません。各サービスの設定から管理してください。</li>
+      <li>本アプリを削除すると、その端末からFirebaseへの新たな送信は停止します。再インストールした場合は、原則として新しいアプリインスタンスID等が生成されます。</li>
+    </ul>
+    <p>
+      本アプリには利用者アカウントがなく、運営者のサーバーに歩数や進行記録を保存していないため、運営者が遠隔でこれらの端末内データを参照または削除することはできません。
+    </p>
+    <p>
+      適用法令によりFirebaseによる情報取得に事前の同意が必要な場合、本アプリは同意を得るまで対象サービスによる取得を開始しません。
+      同意の撤回、Firebaseへ送信された情報の削除その他のデータ保護上の権利行使を希望する場合は、下記のお問い合わせ先へご連絡ください。
+      本アプリには利用者アカウントがないため、ご申告いただいた情報とFirebase上の仮名データを特定して対応できない場合があります。
+      その場合も、合理的に可能な範囲で対応方法をご案内します。
+    </p>
+
+    <h2>7. 本ポリシーの変更</h2>
+    <p>
+      本アプリの機能、利用する外部サービスまたは法令等の変更に応じて、本ポリシーを変更することがあります。
+      重要な変更がある場合は、本アプリ内または本ページ上で適切な方法によりお知らせします。
+      変更後の内容は、本ページに掲載した時点または別途示す施行日から適用されます。
+    </p>
+
+    <h2>8. お問い合わせ</h2>
+    <p>
+      本ポリシーまたは情報の取扱いに関するお問い合わせは、以下のメールアドレスへご連絡ください。
+    </p>
+    <p>mizukami2005@gmail.com</p>
+
+    <h2>9. 運営者</h2>
+    <p>水上 貴晶</p>
+
+    <footer>
+      <p>制定日：2026年8月9日</p>
+    </footer>
+  </main>
 </body>
 
 </html>
